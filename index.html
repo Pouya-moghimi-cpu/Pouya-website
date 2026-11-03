@@ -1,11 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="I'm Pouya Moghimi, an aspiring front-end developer learning HTML, CSS and JavaScript.">
+    <meta name="description"
+        content="Pouya Moghimi - Aspiring Front-End Developer. Explore my skills and web development journey.">
+
+    <meta name="author" content="Pouya Moghimi">
 
     <title>Pouya Moghimi | Front-End Developer</title>
 
@@ -16,23 +20,34 @@
 
     <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">Pouya<span>.dev</span></a>
+
+        <a href="#" class="logo">
+            Pouya<span>.dev</span>
+        </a>
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#skills">Skills</a>
         </nav>
 
-        <button class="theme-btn" id="themeBtn">☾</button>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+            ☾
+        </button>
+
     </header>
 
-    <!-- Hero Section -->
+
+    <!-- Main -->
     <main>
+
+        <!-- Hero Section -->
         <section class="hero">
 
             <div class="hero-content">
 
-                <p class="subtitle">HELLO, I'M POUYA</p>
+                <p class="subtitle">
+                    HELLO, I'M POUYA
+                </p>
 
                 <h1>
                     Building things
@@ -40,54 +55,87 @@
                 </h1>
 
                 <p class="description">
-                    Aspiring Front-End Developer, passionate about
-                    coding, design and creating amazing web experiences.
+                    I'm Pouya Moghimi, an aspiring Front-End Developer
+                    passionate about coding, design and creating
+                    modern web experiences.
                 </p>
 
                 <div class="hero-buttons">
+
                     <a href="#skills" class="btn primary-btn">
-                        Explore my skills ↗
+                        Explore My Skills <span>↗</span>
                     </a>
 
-                    <a href="#footer" class="btn secondary-btn">
-                        Learn more ↓
+                    <a href="mailto:your-email@example.com" class="btn secondary-btn">
+                        Contact Me
                     </a>
+
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
                 </div>
 
             </div>
 
+
+            <!-- Profile Image -->
             <div class="hero-image">
+
                 <img
                     src="ChatGPT%20Image%20Sep%2024,%202026,%2006_29_55%20PM.png"
                     alt="Pouya Moghimi"
                 >
+
+                <div class="image-label">
+                    <span>POUYA MOGHIMI</span>
+                    <span>FRONT-END DEVELOPER</span>
+                </div>
+
             </div>
 
         </section>
 
+
         <!-- Skills Section -->
         <section class="skills" id="skills">
 
-            <div class="section-title">
-                <h2>My Skills</h2>
-                <p>Turning ideas into reality.</p>
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-subtitle">WHAT I DO</p>
+                    <h2>My Skills</h2>
+                </div>
+
+                <p class="section-description">
+                    Learning, building and improving every day.
+                </p>
+
             </div>
+
 
             <div class="skills-container">
 
                 <div class="skill-card">
+                    <span class="skill-number">01</span>
                     <h3>HTML</h3>
-                    <p>Structure the web</p>
+                    <p>Building the structure of websites.</p>
+                    <span class="skill-tag">Structure</span>
                 </div>
 
                 <div class="skill-card">
+                    <span class="skill-number">02</span>
                     <h3>CSS</h3>
-                    <p>Style the web</p>
+                    <p>Creating beautiful and responsive designs.</p>
+                    <span class="skill-tag">Design</span>
                 </div>
 
                 <div class="skill-card">
+                    <span class="skill-number">03</span>
                     <h3>JavaScript</h3>
-                    <p>Bring it to life</p>
+                    <p>Making websites interactive and dynamic.</p>
+                    <span class="skill-tag">Interaction</span>
                 </div>
 
             </div>
@@ -96,10 +144,37 @@
 
     </main>
 
+
     <!-- Footer -->
-    <footer id="footer">
-        <p>© 2026 Pouya.dev — Good things take time.</p>
+    <footer class="footer">
+
+        <a href="#" class="footer-logo">Pouya.dev</a>
+
+        <p>Good things take time.</p>
+
+        <span>© 2026 Pouya Moghimi</span>
+
     </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        const themeBtn = document.getElementById("themeBtn");
+
+        themeBtn.addEventListener("click", function () {
+
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                themeBtn.textContent = "☀";
+            } else {
+                themeBtn.textContent = "☾";
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
