@@ -131,6 +131,100 @@ a {
     color: #888888;
 }
 
+
+/* FRAMEWORKS SECTION */
+
+.frameworks {
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto 80px;
+    padding: 40px;
+
+    background: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 22px;
+}
+
+.frameworks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.framework-card {
+    padding: 30px;
+    background: #252525;
+    border: 1px solid #383838;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.framework-card:hover {
+    background: #303030;
+    transform: translateY(-6px);
+    border-color: #777777;
+}
+
+.framework-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    color: #171717;
+
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.framework-card h3 {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.framework-card p {
+    color: #999999;
+    font-size: 13px;
+}
+
+/* Frameworks Light Mode */
+
+.light-mode .frameworks {
+    background: #e8e8e8;
+    border-color: #cccccc;
+}
+
+.light-mode .framework-card {
+    background: #ffffff;
+    border-color: #dddddd;
+}
+
+.light-mode .framework-card:hover {
+    background: #eeeeee;
+}
+
+.light-mode .framework-card p {
+    color: #666666;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .frameworks {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .frameworks-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .description {
     max-width: 500px;
     color: #aaaaaa;
