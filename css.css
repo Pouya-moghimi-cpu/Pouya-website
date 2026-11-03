@@ -86,6 +86,105 @@ a {
     color: #171717;
 }
 
+/* CONTACT SECTION */
+
+.contact {
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 22px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background: #252525;
+    border: 1px solid #383838;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    background: #303030;
+    transform: translateY(-5px);
+    border-color: #777;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #171717;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.contact-card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.contact-card p {
+    color: #999;
+    font-size: 12px;
+}
+
+.contact-arrow {
+    margin-left: auto;
+    color: #999;
+    font-size: 20px;
+}
+
+/* Light Mode */
+
+.light-mode .contact {
+    background: #e8e8e8;
+    border-color: #ccc;
+}
+
+.light-mode .contact-card {
+    background: white;
+    color: #171717;
+    border-color: #ddd;
+}
+
+.light-mode .contact-card:hover {
+    background: #eee;
+}
+
+.light-mode .contact-card p {
+    color: #666;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* =========================
    HERO SECTION
